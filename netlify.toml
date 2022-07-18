@@ -5,7 +5,6 @@ NPM_FLAGS="--version"
 command = "npx pnpm@6 install --store-dir=.pnpm --frozen-lockfile && npx pnpm@6 build"
 
 [[plugins]]
-package = "/netlify-plugin-cache"
-
-[plugins.inputs]
-paths = [".pnpm"]
+package = "netlify-plugin-cache"
+  [plugins.inputs]
+  paths = [".pnpm"]
