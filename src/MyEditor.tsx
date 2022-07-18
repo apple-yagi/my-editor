@@ -1,17 +1,18 @@
 import { $getRoot, $getSelection } from "lexical";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
-import { PlainTextPlugin } from "@lexical/react/LexicalPlainTextPlugin";
-import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 import { EditorState } from "lexical";
 import { useEffect } from "react";
-import { css } from "@emotion/react";
 import { ToolbarPlugin } from "@/plugins/ToolbarPlugin";
+import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import CodeHighlightPlugin from "./plugins/CodeHighlightPlugin";
 import { MyEditorNodes } from "./nodes/MyEditorNodes";
 import { MyEditorTheme } from "./themes/MyEditorTheme";
+import { Placeholder } from "./ui/Placeholder";
+import { css } from "@emotion/react";
+import { ContentEditable } from "./ui/ContentEditable";
 
 export const MyEditor = () => {
   const initialConfig = {
@@ -47,22 +48,28 @@ export const MyEditor = () => {
   return (
     <LexicalComposer initialConfig={initialConfig}>
       <ToolbarPlugin />
-      <PlainTextPlugin
-        contentEditable={<ContentEditable />}
-        placeholder={
-          <div
-            css={css`
-              font-size: 24px;
-            `}
-          >
-            Enter some text...
-          </div>
-        }
-      />
+      <hr />
+      <div css={styles.container}>
+        <RichTextPlugin
+          contentEditable={<ContentEditable />}
+          placeholder={<Placeholder>Enter some rich text...</Placeholder>}
+        />
+      </div>
       <OnChangePlugin onChange={onChange} />
       <HistoryPlugin />
       <CodeHighlightPlugin />
       <MyCustomAutoFocusPlugin />
     </LexicalComposer>
   );
+};
+
+const styles = {
+  container: css`
+    background: #fff;
+    position: relative;
+    cursor: text;
+    display: block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  `,
 };

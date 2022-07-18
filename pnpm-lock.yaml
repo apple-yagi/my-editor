@@ -4,11 +4,19 @@ specifiers:
   '@emotion/babel-plugin': ^11.9.2
   '@emotion/react': ^11.9.3
   '@lexical/code': ^0.3.7
+  '@lexical/hashtag': ^0.3.7
+  '@lexical/link': ^0.3.7
+  '@lexical/list': ^0.3.7
+  '@lexical/mark': ^0.3.7
+  '@lexical/overflow': ^0.3.7
   '@lexical/react': ^0.3.7
+  '@lexical/rich-text': ^0.3.7
   '@lexical/selection': ^0.3.7
+  '@lexical/table': ^0.3.7
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.0
+  LexicalRichTextPlugin: link:@lexical/react/LexicalRichTextPlugin
   lexical: ^0.3.7
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -19,8 +27,16 @@ specifiers:
 dependencies:
   '@emotion/react': 11.9.3_3hx2ussxxho4jajbwrd6gq34qe
   '@lexical/code': 0.3.7_lexical@0.3.7
+  '@lexical/hashtag': 0.3.7_lexical@0.3.7
+  '@lexical/link': 0.3.7_lexical@0.3.7
+  '@lexical/list': 0.3.7_lexical@0.3.7
+  '@lexical/mark': 0.3.7_lexical@0.3.7
+  '@lexical/overflow': 0.3.7_lexical@0.3.7
   '@lexical/react': 0.3.7_3rkgb5olf5wssarh6svtjx4ezq
+  '@lexical/rich-text': 0.3.7_lbnumrvgaycjskp5l2sm4honsu
   '@lexical/selection': 0.3.7_lexical@0.3.7
+  '@lexical/table': 0.3.7_lexical@0.3.7
+  LexicalRichTextPlugin: link:@lexical/react/LexicalRichTextPlugin
   lexical: 0.3.7
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -587,6 +603,18 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     transitivePeerDependencies:
       - yjs
+    dev: false
+
+  /@lexical/rich-text/0.3.7_lbnumrvgaycjskp5l2sm4honsu:
+    resolution: {integrity: sha512-S3p0DUze8+JoDDRu4cxMfS8Duhp310SseKtHLTgm8Nukhp65RI2+ZSAECa5TDUSz6KnsdKLupj6tcaKM03vu6w==}
+    peerDependencies:
+      '@lexical/clipboard': 0.3.7
+      '@lexical/selection': 0.3.7
+      '@lexical/utils': 0.3.7
+      lexical: 0.3.7
+    dependencies:
+      '@lexical/selection': 0.3.7_lexical@0.3.7
+      lexical: 0.3.7
     dev: false
 
   /@lexical/rich-text/0.3.7_soueexenvcoxpvkkfkjl4dccza:

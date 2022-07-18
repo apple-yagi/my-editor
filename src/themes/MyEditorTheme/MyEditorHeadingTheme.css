@@ -1,0 +1,26 @@
+.MyEditorTheme__h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.MyEditorTheme__h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.MyEditorTheme__h3 {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
