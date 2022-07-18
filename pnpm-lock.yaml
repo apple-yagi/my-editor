@@ -17,7 +17,6 @@ specifiers:
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.0
   lexical: ^0.3.7
-  netlify-plugin-cache: ^1.0.3
   react: ^18.2.0
   react-dom: ^18.2.0
   typescript: ^4.6.4
@@ -45,7 +44,6 @@ devDependencies:
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.0.0_vite@3.0.1
-  netlify-plugin-cache: 1.0.3
   typescript: 4.7.4
   vite: 3.0.1
   vite-tsconfig-paths: 3.5.0_vite@3.0.1
@@ -1138,10 +1136,6 @@ packages:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: true
-
-  /netlify-plugin-cache/1.0.3:
-    resolution: {integrity: sha512-CTOwNWrTOP59T6y6unxQNnp1WX702v2R/faR5peSH94ebrYfyY4zT5IsRcIiHKq57jXeyCrhy0GLuTN8ktzuQg==}
     dev: true
 
   /node-releases/2.0.6:
