@@ -16,7 +16,6 @@ specifiers:
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.0
-  LexicalRichTextPlugin: link:@lexical/react/LexicalRichTextPlugin
   lexical: ^0.3.7
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -36,7 +35,6 @@ dependencies:
   '@lexical/rich-text': 0.3.7_lbnumrvgaycjskp5l2sm4honsu
   '@lexical/selection': 0.3.7_lexical@0.3.7
   '@lexical/table': 0.3.7_lexical@0.3.7
-  LexicalRichTextPlugin: link:@lexical/react/LexicalRichTextPlugin
   lexical: 0.3.7
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0

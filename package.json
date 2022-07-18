@@ -20,7 +20,6 @@
     "@lexical/rich-text": "^0.3.7",
     "@lexical/selection": "^0.3.7",
     "@lexical/table": "^0.3.7",
-    "LexicalRichTextPlugin": "link:@lexical/react/LexicalRichTextPlugin",
     "lexical": "^0.3.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
