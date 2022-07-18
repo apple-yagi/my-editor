@@ -1,4 +1,5 @@
-import { MyEditor } from "./Editor";
+import { MyEditor } from "./MyEditor";
+import "@/styles/reset.css";
 
 const App = () => {
   return <MyEditor />;
