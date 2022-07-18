@@ -11,7 +11,14 @@ export const ToolbarPlugin = () => {
       const selection = $getSelection();
 
       if ($isRangeSelection(selection)) {
-        $wrapLeafNodesInElements(selection, () => $createCodeNode());
+        if (selection.isCollapsed()) {
+          $wrapLeafNodesInElements(selection, () => $createCodeNode());
+        } else {
+          const textContent = selection.getTextContent();
+          const codeNode = $createCodeNode();
+          selection.insertNodes([codeNode]);
+          selection.insertRawText(textContent);
+        }
       }
     });
   };

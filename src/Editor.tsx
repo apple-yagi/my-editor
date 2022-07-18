@@ -9,11 +9,16 @@ import { EditorState } from "lexical";
 import { useEffect } from "react";
 import { css } from "@emotion/react";
 import { ToolbarPlugin } from "@/plugins/ToolbarPlugin";
+import CodeHighlightPlugin from "./plugins/CodeHighlightPlugin";
+import { MyEditorNodes } from "./nodes/MyEditorNodes";
+import { MyEditorTheme } from "./themes/MyEditorTheme";
 
-export const Editor = () => {
+export const MyEditor = () => {
   const initialConfig = {
-    namespace: "Editor",
+    namespace: "MyEditor",
     onError,
+    nodes: [...MyEditorNodes],
+    theme: MyEditorTheme,
   };
 
   function onChange(editorState: EditorState) {
@@ -21,8 +26,6 @@ export const Editor = () => {
       // Read the contents of the EditorState here.
       const root = $getRoot();
       const selection = $getSelection();
-
-      console.log(root, selection);
     });
   }
 
@@ -58,6 +61,7 @@ export const Editor = () => {
       />
       <OnChangePlugin onChange={onChange} />
       <HistoryPlugin />
+      <CodeHighlightPlugin />
       <MyCustomAutoFocusPlugin />
     </LexicalComposer>
   );

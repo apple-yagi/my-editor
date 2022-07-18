@@ -1,7 +1,7 @@
-import { Editor } from "./Editor";
+import { MyEditor } from "./Editor";
 
 const App = () => {
-  return <Editor />;
+  return <MyEditor />;
 };
 
 export default App;
